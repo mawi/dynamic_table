@@ -1,0 +1,13 @@
+Provides a set of models to generate a table with an unknow and variable number of columns with its own name. Each column generates a find_by_{column_name} and order_by{column_name} method to filter and order.
+
+
+INSTALATION
+-----------
+
+script/plugin install git@github.com:mawi/dynamic_table.git
+
+
+USAGE
+-----------
+
+script/generate dynamic_table
