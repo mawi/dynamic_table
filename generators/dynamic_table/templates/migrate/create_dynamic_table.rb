@@ -2,23 +2,23 @@ class CreateDynamicTable < ActiveRecord::Migration
   def self.up
 
     create_table :dynamic_tables, :force => true do |t|
-      t.name :string
+      t.string :name
       t.timestamps
     end
     
     create_table :registries, :force => true do |t|
-      t.dynamic_table_id :integer
+      t.integer :dynamic_table_id
       t.timestamps
     end
     
     create_table :field_values, :force => true do |t|
-      t.data_type :string
-      t.data_name :string
-      t.value_int :int
-      t.value_string :string
-      t.value_boolean :bool
-      t.value_date :date
-      t.registry_id :integer
+      t.string :data_type
+      t.string :data_name
+      t.integer  :value_int
+      t.string  :value_string
+      t.bool :value_boolean
+      t.date :value_date
+      t.integer :registry_id
       t.timestamps
     end
     

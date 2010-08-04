@@ -11,3 +11,9 @@ USAGE
 -----------
 
 script/generate dynamic_table
+
+
+EXAMPLE DATA
+------------
+
+Use rake db:dynamic_populate to populate a db with an example
