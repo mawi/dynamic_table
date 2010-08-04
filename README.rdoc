@@ -1,0 +1,18 @@
+= Dynamic Table
+
+Provides a set of models to generate a table with an unknow and variable number of columns with its own name. Each column generates a find_by_{column_name} and order_by{column_name} method to filter and order.
+
+
+== Install
+  
+  script/plugin install git://github.com/mawi/dynamic_table.git
+
+
+== Usage
+  
+  script/generate dynamic_table
+
+
+== Example data
+
+  rake db:dynamic_populate
